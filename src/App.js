@@ -1,23 +1,16 @@
 import React from 'react';
 import './App.css';
-import { Button } from 'reactstrap';
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faEnvelope, faKey } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { fab } from '@fortawesome/free-brands-svg-icons'
+import { faFileAlt } from '@fortawesome/free-solid-svg-icons';
+import Header from './Header';
 
-library.add(faEnvelope, faKey);
+library.add(fab, faFileAlt);
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-
-        <Button className="btn-info">
-          <FontAwesomeIcon icon="envelope"/>
-            Hello
-        </Button>
-
-      </header>
+      <Header />
     </div>
   );
 }
