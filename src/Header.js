@@ -5,13 +5,16 @@ import profile from './profile-pic-crop.jpg';
 
 function Header() {
     return (
-      <Container class="align-items-center">
-        <Row class="justify-content-center">
+      <Container className="align-items-center fluid">
+        <h1>Martha Sharpe</h1>
+        <h2>Software Engineer</h2>
+        <Row className="justify-content-center">
           <Col xs="10" md="6" xl="4">
-          <img src={profile} class="rounded-circle img-fluid justify-content-center" alt="circular profile"/>
+          <img src={profile} className="rounded-circle img-fluid" alt="circular profile"/>
           </Col>
         </Row>
-        <Row>
+        <p>About Me</p>
+        <Row className="justify-content-center">
           <Links />
         </Row>
       </Container>
